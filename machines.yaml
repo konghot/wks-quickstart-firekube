@@ -13,7 +13,7 @@ items:
         apiVersion: baremetalproviderspec/v1alpha1
         kind: BareMetalMachineProviderSpec
         private:
-          address: 10.61.0.45
+          address: 10.61.0.55
           port: 22
         public:
           address: 127.0.0.1
@@ -31,7 +31,7 @@ items:
         apiVersion: baremetalproviderspec/v1alpha1
         kind: BareMetalMachineProviderSpec
         private:
-          address: 10.61.0.46
+          address: 10.61.0.56
           port: 22
         public:
           address: 127.0.0.1
@@ -49,7 +49,7 @@ items:
         apiVersion: baremetalproviderspec/v1alpha1
         kind: BareMetalMachineProviderSpec
         private:
-          address: 10.61.0.47
+          address: 10.61.0.57
           port: 22
         public:
           address: 127.0.0.1
@@ -67,7 +67,7 @@ items:
         apiVersion: baremetalproviderspec/v1alpha1
         kind: BareMetalMachineProviderSpec
         private:
-          address: 10.61.0.48
+          address: 10.61.0.58
           port: 22
         public:
           address: 127.0.0.1
@@ -85,7 +85,7 @@ items:
         apiVersion: baremetalproviderspec/v1alpha1
         kind: BareMetalMachineProviderSpec
         private:
-          address: 10.61.0.49
+          address: 10.61.0.59
           port: 22
         public:
           address: 127.0.0.1
@@ -103,7 +103,7 @@ items:
         apiVersion: baremetalproviderspec/v1alpha1
         kind: BareMetalMachineProviderSpec
         private:
-          address: 10.61.0.50
+          address: 10.61.0.60
           port: 22
         public:
           address: 127.0.0.1
@@ -121,7 +121,7 @@ items:
         apiVersion: baremetalproviderspec/v1alpha1
         kind: BareMetalMachineProviderSpec
         private:
-          address: 10.61.0.51
+          address: 10.61.0.61
           port: 22
         public:
           address: 127.0.0.1
@@ -139,45 +139,9 @@ items:
         apiVersion: baremetalproviderspec/v1alpha1
         kind: BareMetalMachineProviderSpec
         private:
-          address: 10.61.0.52
+          address: 10.61.0.62
           port: 22
         public:
           address: 127.0.0.1
           port: 2229
-- apiVersion: cluster.k8s.io/v1alpha1
-  kind: Machine
-  metadata:
-    labels:
-      set: worker
-    name: worker-5
-    namespace: weavek8sops
-  spec:
-    providerSpec:
-      value:
-        apiVersion: baremetalproviderspec/v1alpha1
-        kind: BareMetalMachineProviderSpec
-        private:
-          address: 10.61.0.53
-          port: 22
-        public:
-          address: 127.0.0.1
-          port: 2230
-- apiVersion: cluster.k8s.io/v1alpha1
-  kind: Machine
-  metadata:
-    labels:
-      set: worker
-    name: worker-6
-    namespace: weavek8sops
-  spec:
-    providerSpec:
-      value:
-        apiVersion: baremetalproviderspec/v1alpha1
-        kind: BareMetalMachineProviderSpec
-        private:
-          address: 10.61.0.54
-          port: 22
-        public:
-          address: 127.0.0.1
-          port: 2231
 kind: List
